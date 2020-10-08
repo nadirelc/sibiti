@@ -23,7 +23,7 @@ function Layout({ children, title, description }) {
         <html className="no-js" lang="id" itemScope itemType="//schema.org/WebSite"/>
         <meta charSet="UTF-8" />
         <meta httpEquiv="x-ua-compatible" content="ie=edge" />
-        <link rel="shortcut icon" href="public/images/cover-2.jpg" type="image/x-icon"/>
+        <link rel="shortcut icon" href="images/cover-2.jpg" type="image/x-icon"/>
         <meta
           name="description"
           content={ description || 'Sibiti merupakan sebuah platform ujian online terintegrasi. Dengan Sibiti, anda dengan sangat mudah dapat melaksanakan segala kegiatan yang berhubungan dengan ujian, assessment test, penyisihan lomba, rekrutmen pegawai, atau bahkan tugas harian peserta didik.'}
@@ -40,7 +40,7 @@ function Layout({ children, title, description }) {
         <meta property="og:locale" content="id_ID" />
         <meta
           property="og:image"
-          content="public/images/cover-2.jpg"
+          content="images/cover-2.jpg"
         />
         <meta
           name="google-site-verification"
