@@ -19,14 +19,14 @@ function Layout({ children, title, description }) {
       <Head>
         <title>{ title ? `${title} | ` : '' }Sibiti NADIR</title>
         <link rel="icon" href="/favicon.ico" />
-        <link rel="shortcut icon" href="https://www.sibiti.co.id/images/cover-2.jpg" type="image/jpg"/>
+        <link rel="shortcut icon" href="https://www.sibiti.co.id/images/cover-2.jpg" type="image/ico"/>
         <html className="no-js" lang="id" itemScope itemType="//schema.org/WebSite"/>
         <meta charSet="UTF-8" />
         <meta httpEquiv="x-ua-compatible" content="ie=edge" />
         
         <meta
           name="description"
-          content={ description || 'Sibiti merupakan sebuah platform ujian online terintegrasi. Dengan Sibiti, anda dengan sangat mudah dapat melaksanakan segala kegiatan yang berhubungan dengan ujian, assessment test, penyisihan lomba, rekrutmen pegawai, atau bahkan tugas harian peserta didik.'}
+          content={ description || 'Nadir2 merupakan sebuah platform ujian online terintegrasi. Dengan Sibiti, anda dengan sangat mudah dapat melaksanakan segala kegiatan yang berhubungan dengan ujian, assessment test, penyisihan lomba, rekrutmen pegawai, atau bahkan tugas harian peserta didik.'}
         />
 
         <meta property="og:title" content="Sibiti, an Online CBT Platform" />
@@ -40,7 +40,7 @@ function Layout({ children, title, description }) {
         <meta property="og:locale" content="id_ID" />
         <meta
           property="og:image"
-          content="https://www.sibiti.co.id/images/cover-2.jpg" type="image/jpg"
+          content="https://www.sibiti.co.id/images/cover-2.jpg" type="image/ico"
         />
         <meta
           name="google-site-verification"
