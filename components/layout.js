@@ -18,7 +18,7 @@ function Layout({ children, title, description }) {
     <div id="root">
       <Head>
         <title>{ title ? `${title} | ` : '' }Sibiti NADIR</title>
-        <link rel="shortcut icon" href="images/logo-mlc2x-128x128.png" type="image/x-icon"/>
+        <link rel="icon" href="images/logosibiti.png" type="image/x-icon" />
   
         <html className="no-js" lang="id" itemScope itemType="//schema.org/WebSite"/>
         <meta charSet="UTF-8" />
@@ -38,7 +38,7 @@ function Layout({ children, title, description }) {
         />
         <meta property="og:type" content="article" />
         <meta property="og:locale" content="id_ID" />
-        <meta property="og:image" content="/favicon.ico" />
+        <meta property="og:image" content="images/logosibiti.png" />
         <meta
           name="google-site-verification"
           content="rr3nBbEI6p_sgN-kpeBvtqWq7cDW2S8bCW7M60NSgNg"
