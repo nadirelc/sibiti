@@ -19,7 +19,7 @@ function Layout({ children, title, description }) {
       <Head>
         <title>{ title ? `${title} | ` : '' }Sibiti NADIR</title>
 
-        <link rel="icon" href="images/logosibiti.png" type="image/x-icon"></link>
+        <link rel="icon" href="images/logosibiti.png" type="image/x-icon"/>
         <html className="no-js" lang="id" itemScope itemType="//schema.org/WebSite"/>
         <meta charSet="UTF-8" />
         <meta httpEquiv="x-ua-compatible" content="ie=edge" />
