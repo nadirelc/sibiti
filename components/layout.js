@@ -18,7 +18,6 @@ function Layout({ children, title, description }) {
     <div id="root">
       <Head>
         <title>{ title ? `${title} | ` : '' }Sibiti NADIR</title>
-        <link rel="icon" href="/favicon.ico" />
         <link rel="shortcut icon" href="public/images/cover-2.png" type="image/x-icon"/>
         <html className="no-js" lang="id" itemScope itemType="//schema.org/WebSite"/>
         <meta charSet="UTF-8" />
