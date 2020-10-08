@@ -38,7 +38,7 @@ function Layout({ children, title, description }) {
         />
         <meta property="og:type" content="article" />
         <meta property="og:locale" content="id_ID" />
-        <meta property="og:image" content="https://www.facebook.com/images/fb_icon_325x325.png" />
+        <meta property="og:image" content="https://www.sibiti.co.id/images/cover-2.jpg" />
         <meta
           name="google-site-verification"
           content="rr3nBbEI6p_sgN-kpeBvtqWq7cDW2S8bCW7M60NSgNg"
