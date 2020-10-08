@@ -19,7 +19,7 @@ function Layout({ children, title, description }) {
       <Head>
         <title>{ title ? `${title} | ` : '' }Sibiti NADIR</title>
         <link rel="icon" href="/favicon.ico" />
-        <link rel="shortcut icon" href="https://www.sibiti.co.id/images/cover-2.jpg" type="image/x-icon"/>
+        <link rel="shortcut icon" href="https://www.sibiti.co.id/images/cover-2.jpg" type="image/jpg"/>
         <html className="no-js" lang="id" itemScope itemType="//schema.org/WebSite"/>
         <meta charSet="UTF-8" />
         <meta httpEquiv="x-ua-compatible" content="ie=edge" />
@@ -40,7 +40,7 @@ function Layout({ children, title, description }) {
         <meta property="og:locale" content="id_ID" />
         <meta
           property="og:image"
-          content="https://www.sibiti.co.id/images/cover-2.jpg"
+          content="https://www.sibiti.co.id/images/cover-2.jpg" type="image/jpg"
         />
         <meta
           name="google-site-verification"
