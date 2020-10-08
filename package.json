@@ -1,0 +1,24 @@
+{
+  "name": "learn-starter",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "axios": "^0.19.2",
+    "font-awesome": "^4.7.0",
+    "next": "9.3.5",
+    "normalize.css": "^8.0.1",
+    "nprogress": "^0.2.0",
+    "react": "16.13.1",
+    "react-async": "^10.0.1",
+    "react-dom": "16.13.1",
+    "react-helmet": "^6.1.0",
+    "react-modal": "^3.11.2",
+    "react-quotes-rotator": "^1.0.0",
+    "sass": "^1.27.0"
+  }
+}

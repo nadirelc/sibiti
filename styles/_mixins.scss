@@ -1,0 +1,4 @@
+@mixin fontSize($sizeInPx) {
+  font-size: #{$sizeInPx / 16}rem;
+  line-height: #{($sizeInPx * 1.45) / 16}rem;
+}

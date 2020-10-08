@@ -1,0 +1,20 @@
+.headline {
+  margin-bottom: 50px;
+  &Card {
+    a {
+      display: inline-block;
+      color: #333;
+      width: 100%;
+    }
+
+    h2 {
+      font-size: 1.6rem;
+    }
+
+    figure {
+      img {
+        max-width: 100%;
+      }
+    }
+  }
+}

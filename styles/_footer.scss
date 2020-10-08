@@ -1,0 +1,28 @@
+footer {
+  background-color: $footer-color;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  text-align: center;
+  color: #d9d9d9;
+
+  hr {
+    background-color: #d9d9d9;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    li {
+      list-style: none;
+      display: inline-block;
+      margin: 5px 15px;
+      a {
+        color: #d9d9d9;
+        &:active, :focus, :hover {
+          color: white;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}

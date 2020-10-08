@@ -1,0 +1,72 @@
+.ad {
+  position: relative;
+  width: 100%;
+  margin: 10px auto 0;
+
+  text-align: center;
+}
+.ad-placeholder {
+  @include absolute-centering('x');
+  top: 0;
+  margin: 0 auto;
+
+  z-index: -1;
+  background: #fbfbfb;
+  color: #cecece;
+  font-size: 0.625rem;
+}
+.ad-leaderboard,
+.ad-rectangle {
+  width: 320px;
+  height: 100px;
+
+  .ad-placeholder {
+    width:320px;
+    height: 100px;
+    padding-top: 40px;
+  }
+}
+.ad-medium-rectangle {
+  width:300px;
+  height: 250px;
+
+  .ad-placeholder {
+    width:300px;
+    height: 250px;
+    padding-top: 110px;
+  }
+}
+
+.sticky-bottom {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  margin: 0 auto;
+
+  z-index: 10000001;
+  opacity: 1;
+  transition: opacity 0.2s ease-in;
+  text-align: center;
+}
+.sticky-bottom-wrapper {
+  position: relative;
+  width: 320px;
+  min-height: 50px;
+  max-height: 100px;
+  margin: 0 auto;
+
+  text-align: center;
+}
+.close-btn {
+  position: absolute;
+  top: -30px;
+  right: 0;
+  width: 30px;
+  height: 30px;
+
+  background-color: #ff0000;
+  color: #fff;
+  opacity: 0.8;
+  border: 0;
+}

@@ -1,0 +1,21 @@
+.community-header {
+  background: url('/static/images/community-background.jpg') center center fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  .container {
+    position: relative;
+    color: white;
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 50px;
+
+    a.backButton {
+      position: absolute;
+      left: 20px;
+      top: 20px;
+      font-size: 1.8rem;
+      color: white;
+    }
+  }
+}

@@ -1,0 +1,71 @@
+h2.category-title {
+  font-weight: bold;
+  color: $font-color;
+  @include fontSize(25);
+  margin: 10px 0;
+}
+
+.topCardCategory {
+  display: flex;
+  flex-direction: row;
+  .card {
+    &:nth-child(odd) {
+      padding-right: 5px;
+    }
+
+    &:nth-child(even) {
+      padding-left: 5px;
+    }
+
+    a {
+      color: #333333;
+    }
+    flex: 50% 0 0;
+    h2 {
+      font-size: 1rem;
+      padding: 7.5px 0;
+      font-weight: 600;
+      line-height: 1.3;
+    }
+    img {
+      max-width: 100%;
+    }
+  }
+}
+
+.bottomCardCategory {
+  .card-column {
+    img {
+      max-width: 100%;
+    }
+
+    &:last-child {
+      >a {
+        border-bottom: none;
+      }
+    }
+  }
+  .card-column > a {
+    display: flex;
+    margin: 15px 0;
+    padding: 0 0 15px;
+    border-bottom: solid $line-color 1px;
+    color: $font-color;
+  }
+
+  .card-column .thumb {
+    flex: 38% 0 0;
+  }
+
+  .card-column section {
+    flex: 1 0 0;
+  }
+
+  .card-column section h2 {
+    font-size: 1rem;
+    margin: 0;
+    padding: 0 0 0 10px;
+    font-weight: 600;
+    line-height: 1.3;
+  }
+}

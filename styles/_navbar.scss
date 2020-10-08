@@ -1,0 +1,144 @@
+.navbarDefault {
+  border-bottom: solid #e8e8e8 1px;
+  .navbar {
+    display: flex;
+
+    .navbarBrand {
+      padding: 15px;
+      @media (max-width: 321px) {
+        padding: 15px 8px;
+      }
+      img {
+        width: 150px;
+        @media (max-width: 321px) {
+          width: 130px;
+        }
+      }
+    }
+
+    .navbarButtons {
+      flex: 1 0 0;
+
+      ul {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        >li {
+          height: 100%;
+          border-left: solid #e8e8e8 1px;
+          a {
+            padding: 0 15px;
+            line-height: 1.8;
+            font-size: 1.8rem;
+            color: #868686;
+          }
+        }
+      }
+    }
+  }
+  .menus {
+    position: fixed;
+    padding: 1rem 0 0;
+    z-index: 99;
+    width: 100%;
+    height: calc(100% - 56px);
+    right: -100%;
+    top: 55px;
+    overflow-y: scroll;
+    border-top: solid #e9e9e9 1px;
+    transition: cubic-bezier(0.39, 0.14, 0.36, 1.07) 0.5s;
+    background-color: white;
+
+    &--list {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      padding: 1.3rem 15px;
+      li {
+        list-style: none;
+        flex: 50% 0 0;
+        padding: .70rem 0;
+        border-bottom: solid $mute-color 1px;
+        &:first-child {
+          border-top: solid $mute-color 1px;
+        }
+        &:nth-child(2) {
+          border-top: solid $mute-color 1px;
+        }
+        &:last-child {
+          border-bottom: none;
+        }
+
+        a {
+          font-weight: 600;
+          color: $font-color;
+        }
+      }
+    }
+  }
+}
+
+.whats-hot {
+  position: relative;
+  // top: 3.563rem;
+  left: 0;
+  width: 100%;
+  height: 1.563rem;
+  overflow: hidden;
+  z-index: 98;
+  white-space: nowrap;
+  box-sizing: border-box;
+
+  background: #fff;
+  box-shadow: 0 4px 5px -2px rgba(86,86,86,.38);
+}
+
+.whats-hot .label {
+  position: absolute;
+  display: inline-block;
+  height: 100%;
+  padding: 1px 5px;
+  z-index: 2;
+
+  font-size: 0.916rem;
+  background: #fff;
+  color: #ec2227;
+  border-right: 1px solid rgba(218, 218, 218, 1);
+}
+
+.whats-hot >  div {
+  display: inline-block;
+  margin-top: 0;
+  margin-bottom: 0;
+  transform: translateX(767px);
+  animation: marquee 35s linear infinite;
+}
+
+.whats-hot a {
+  display: inline;
+  margin-right: 1.25rem;
+
+  font-size: 0.8335rem;
+  color: #000;
+  text-decoration: none;
+}
+
+@keyframes marquee {
+  0% {
+      transform:translateX(767px);
+  }
+  1% {
+    transform:translateX(310px);
+  }
+  99%{
+    transform:translateX(-90%);
+  }
+  100%{
+    transform:translateX(-100%);
+  }
+}

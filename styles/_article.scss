@@ -1,0 +1,51 @@
+article {
+  header {
+    margin-top: 1rem;
+  }
+  span.date {
+    display:block;
+    font-size: .75rem;
+    color: #828285;
+    margin-bottom: 1rem;
+  }
+  .cover {
+    margin: 0 -15px 15px;
+  }
+  h1.title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1.75rem;
+    small {
+      display: block;
+      font-size: 0.8125rem;
+      line-height: 1.5;
+      margin: 10px 0 0;
+      font-weight: 400;
+      color: #808285;
+    }
+  }
+
+  h2,h3,h4,h5,h6 {
+    font-weight: 600;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    margin: 1.5rem 0;
+  }
+
+  figure {
+    margin: 1rem 0 !important;
+  }
+
+  p {
+    margin-bottom: 1.25rem;
+  }
+}
+
+.readmore-wrapper {
+  text-align: center;
+  padding: 300px 0 50px;
+  margin-top: -400px;
+  position: relative;
+  z-index: 2;
+  background: linear-gradient(to bottom,transparent,white);
+}

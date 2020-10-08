@@ -1,0 +1,111 @@
+@mixin box-shadow($param) {
+  @each $prefix in '-webkit-', '-moz-', '-ms-', '-o-', '' {
+    #{$prefix}box-shadow: $param;
+  }
+}
+
+@mixin box-sizing($param) {
+  @each $prefix in '-webkit-', '-moz-', '-ms-', '-o-', '' {
+    #{$prefix}box-sizing: $param;
+  }
+}
+
+@mixin border-radius($param) {
+  @each $prefix in '-webkit-', '-moz-', '-ms-', '-o-', '' {
+    #{$prefix}border-radius: $param;
+  }
+}
+
+@mixin backface-visibility($param) {
+  @each $prefix in '-webkit-', '-moz-', '-ms-', '-o-', '' {
+    #{$prefix}backface-visibility: $param;
+  }
+}
+
+@mixin clearfix() {
+  &::after {
+    display: block;
+    clear: both;
+    content: "";
+  }
+}
+
+@mixin transform($params...) {
+  @each $prefix in '-webkit-', '-moz-', '-ms-', '-o-', '' {
+    #{$prefix}transform: $params;
+  }
+}
+
+@mixin transition($params...) {
+  @each $prefix in '-webkit-', '-moz-', '-ms-', '-o-', '' {
+    #{$prefix}transition: $params;
+  }
+}
+
+// Make absolute position and center the element
+// @param $axis: x, y, or null for both
+@mixin absolute-centering($axis: null) {
+    position: absolute;
+
+    @if $axis == x {        // horizontal centering
+        left: 50%;
+        @include transform(translateX(-50%));
+    } @else if $axis == y { // vertical centering
+        top: 50%;
+        @include transform(translateY(-50%));
+    } @else {               // centering horizontal and vertically
+        top: 50%;
+        left: 50%;
+        @include transform(translate(-50%, -50%));
+    }
+}
+
+// Positioning non-static element
+// @param $coordinates: one argument = top, two arguments = top left, four arguments = top right bottom left
+// Same as margin/padding values
+// Example:
+//   - position(absolute, null -90px 100% 0)
+//     will produce position: absolute; right: -90px; bottom: 100%; left: 0;
+//   - position(relative, 50% 10em)
+//     will produce position: relative; top: 50%; left: 10em;
+@mixin position($position: relative, $coordinates: null null null null) {
+  $targets: null !default;
+  $count: null !default;
+  $count: length($coordinates);
+
+  @if $count == 1 {
+    $targets: top;
+  } @else if $count == 2 {
+    $targets: top left;
+  } @else if $count == 4 {
+    $targets: top right bottom left;
+  }
+
+  position: $position;
+
+  @for $i from 1 through $count {
+    @if not nth($coordinates,$i) != null {
+      #{nth($targets,($i))}: nth($coordinates,$i);
+    }
+  }
+}
+
+// Sizing elements
+// @param $size:
+//   one argument  = width and height will have the same size (square)
+//   two arguments = set width then height
+//   argument delimiter is comma
+// Example:
+//   - size(10px)
+//     will produce width: 10px; height: 10px;
+//   - size(10rem, 50%)
+//     will produce width: 10rem; height: 50%;
+@mixin size($size...) {
+  @if length($size) > 1 {
+    width: nth($size, 1);
+    height: nth($size, 2);
+  } @else {
+    width: $size;
+    height: $size;
+  }
+}

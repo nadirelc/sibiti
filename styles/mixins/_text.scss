@@ -1,0 +1,29 @@
+// Text truncate
+// Requires inline-block or block for proper styling
+@mixin text-truncate($display, $width, $ellipsis: true) {
+  display: $display;
+// todo: width or max-width ?
+  width: $width;
+  overflow: hidden;
+  white-space: nowrap;
+//word-wrap: normal;
+  @if $ellipsis == true {
+    text-overflow: ellipsis;
+  }
+}
+
+// Most of the time, changing font family will also set the new font size
+@mixin set-font($font-family, $font-size, $font-color: null, $font-weight: null, $text-align: null) {
+  font-family: $font-family;
+  font-size: $font-size;
+
+  @if not $font-color {
+    color: $font-color;
+  }
+  @if not $font-weight {
+    font-weight: $font-weight;
+  }
+  @if not $text-align {
+    text-align: $text-align;
+  }
+}

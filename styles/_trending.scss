@@ -1,0 +1,40 @@
+.trendingOuter {
+  padding-bottom: 20px;
+}
+
+.trendingHeader h2 {
+  font-weight: bold;
+  color: $font-color;
+  @include fontSize(25);
+}
+
+.trendingHeader h2 button {
+  font-size: 70%;
+  padding: 0 10px;
+  color: $font-color;
+  border: none;
+  background: transparent;
+  outline: none;
+}
+
+.trending {
+  margin-left: -7.5px;
+  margin-right: -7.5px;
+  border-top: solid $line-color 1px;
+  border-bottom: solid $line-color 1px;
+  padding: 10px 0 0;
+}
+.trendingCard {
+  padding: 0 5px;
+}
+
+.trendingCard a {
+  color: $font-color-header;
+}
+
+.trendingCard h4 {
+  font-size: 1rem;
+  padding: 5px 0;
+  font-weight: 600;
+  line-height: 1.3;
+}

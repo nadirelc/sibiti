@@ -1,0 +1,71 @@
+@import '../node_modules/normalize.css/normalize.css';
+@import "bootstrap/bootstrap.scss";
+// @import "animate.scss";
+
+body, html {
+  min-width: 320px;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: SF Optimized, system-ui, -apple-system, BlinkMacSystemFont, '.SFNSText-Regular', sans-serif;
+  letter-spacing: -0.01em;
+  padding-top: 72px;
+}
+
+button.btn {
+  background: white;
+  border: solid #cecdcd 1px;
+  padding: 10px 30px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.2s linear;
+  &:hover, :active, :focus {
+    box-shadow: 0px 2px 4px 0 rgba(0, 0, 0, 0.2196078431372549);
+  }
+}
+
+.qtrotator {
+  min-height: 150px !important;
+}
+
+@media (max-width: 1024px) {
+  .header {
+    padding-top: 200px !important;
+    padding-bottom: 80px !important;
+  }
+
+  .header .container {
+    padding: 0 210px !important;
+  }
+}
+@media (max-width: 768px) {
+  .header {
+    padding-top: 200px !important;
+    padding-bottom: 80px !important;
+  }
+
+  .header .container {
+    padding: 0 100px !important;
+  }
+}
+
+@media (max-width: 425px) {
+  .header {
+    padding-top: 100px !important;
+  }
+
+  .header .container {
+    padding: 0 20px !important;
+  }
+}
+
+@media (max-width: 375px) {
+  .header {
+    padding-top: 50px !important;
+  }
+
+  .header h1 {
+    font-size: 2.5rem !important;
+  }
+}
