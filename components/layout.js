@@ -33,16 +33,16 @@ function Layout({ children, title, description }) {
         <meta property="og:url" content="https://www.sibiti.co.id/"/>
         <meta property="og:title" content="Online test, right to your hands"/>
         <meta property="og:description" content="Sibiti merupakan sebuah platform ujian online terintegrasi. Dengan Sibiti, anda dengan sangat mudah dapat melaksanakan segala kegiatan yang berhubungan dengan ujian, assessment test, penyisihan lomba, rekrutmen pegawai, atau bahkan tugas harian peserta didik."/>
-        <meta property="og:image" content="/images/cover-2.jpg"/>
+        <meta property="og:image" content="/images/cover-2a.jpg"/>
         
 
         <meta property="twitter:card" content="summary_large_image"/>
         <meta property="twitter:url" content="https://www.sibiti.co.id/"/>
         <meta property="twitter:title" content="Online test, right to your hands"/>
         <meta property="twitter:description" content="Sibiti merupakan sebuah platform ujian online terintegrasi. Dengan Sibiti, anda dengan sangat mudah dapat melaksanakan segala kegiatan yang berhubungan dengan ujian, assessment test, penyisihan lomba, rekrutmen pegawai, atau bahkan tugas harian peserta didik."/>
-        <meta property="twitter:image" content="/images/cover-2.jpg"/>
+        <meta property="twitter:image" content="/images/cover-2a.jpg"/>
 
-        <meta property="line:image" content="/images/cover-2.jpg"/>
+        <meta property="line:image" content="/images/cover-2a.jpg"/>
                 
         <meta
           name="google-site-verification"
