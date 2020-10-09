@@ -18,7 +18,7 @@ function Layout({ children, title, description }) {
     <div id="root">
       <Head>
         <title>{ title ? `${title} | ` : '' }Sibiti NADIR</title>
-        <link rel="icon" href="images/logosibiti.png" type="image/x-icon" />
+        <link rel="icon" href="/favico.ico"/>
   
         <html className="no-js" lang="id" itemScope itemType="//schema.org/WebSite"/>
         <meta charSet="UTF-8" />
@@ -29,16 +29,19 @@ function Layout({ children, title, description }) {
           content={ description || 'Nadir2 merupakan sebuah platform ujian online terintegrasi. Dengan Sibiti, anda dengan sangat mudah dapat melaksanakan segala kegiatan yang berhubungan dengan ujian, assessment test, penyisihan lomba, rekrutmen pegawai, atau bahkan tugas harian peserta didik.'}
         />
 
-        <meta property="og:title" content="Sibiti, an Online CBT Platform" />
-        <meta property="og:site_name" content="Sibiti.co.id" />
-        <meta property="og:url" content="https://www.sibiti.co.id" />
-        <meta
-          property="og:description"
-          content={ description || 'NADIR merupakan sebuah platform ujian online terintegrasi. Dengan Sibiti, anda dengan sangat mudah dapat melaksanakan segala kegiatan yang berhubungan dengan ujian, assessment test, penyisihan lomba, rekrutmen pegawai, atau bahkan tugas harian peserta didik.'}
-        />
-        <meta property="og:type" content="article" />
-        <meta property="og:locale" content="id_ID" />
-        <meta property="og:image" content="images/logosibiti.png" />
+        <meta property="og:type" content="website"/>
+        <meta property="og:url" content="https://www.sibiti.co.id/"/>
+        <meta property="og:title" content="Online test, right to your hands"/>
+        <meta property="og:description" content="Sibiti merupakan sebuah platform ujian online terintegrasi. Dengan Sibiti, anda dengan sangat mudah dapat melaksanakan segala kegiatan yang berhubungan dengan ujian, assessment test, penyisihan lomba, rekrutmen pegawai, atau bahkan tugas harian peserta didik."/>
+        <meta property="og:image" content="https://www.sibiti.co.id/static/images/cover-2.jpg"/>
+        
+
+        <meta property="twitter:card" content="summary_large_image"/>
+        <meta property="twitter:url" content="https://www.sibiti.co.id/"/>
+        <meta property="twitter:title" content="Online test, right to your hands"/>
+        <meta property="twitter:description" content="Sibiti merupakan sebuah platform ujian online terintegrasi. Dengan Sibiti, anda dengan sangat mudah dapat melaksanakan segala kegiatan yang berhubungan dengan ujian, assessment test, penyisihan lomba, rekrutmen pegawai, atau bahkan tugas harian peserta didik."/>
+        <meta property="twitter:image" content="https://www.sibiti.co.id/static/images/cover-2.jpg"/>
+                
         <meta
           name="google-site-verification"
           content="rr3nBbEI6p_sgN-kpeBvtqWq7cDW2S8bCW7M60NSgNg"
