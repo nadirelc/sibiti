@@ -18,7 +18,7 @@ function Layout({ children, title, description }) {
     <div id="root">
       <Head>
         <title>{ title ? `${title} | ` : '' }Sibiti NADIR</title>
-        <link rel="icon" href="/favico.ico"/>
+        <link rel="icon" href="/favicon.ico" />
   
         <html className="no-js" lang="id" itemScope itemType="//schema.org/WebSite"/>
         <meta charSet="UTF-8" />
@@ -41,6 +41,8 @@ function Layout({ children, title, description }) {
         <meta property="twitter:title" content="Online test, right to your hands"/>
         <meta property="twitter:description" content="Sibiti merupakan sebuah platform ujian online terintegrasi. Dengan Sibiti, anda dengan sangat mudah dapat melaksanakan segala kegiatan yang berhubungan dengan ujian, assessment test, penyisihan lomba, rekrutmen pegawai, atau bahkan tugas harian peserta didik."/>
         <meta property="twitter:image" content="https://www.sibiti.co.id/static/images/cover-2.jpg"/>
+
+        <meta property="line:image" content="https://www.sibiti.co.id/static/images/cover-2.jpg"/>
                 
         <meta
           name="google-site-verification"
